@@ -1,6 +1,12 @@
 Sharp X1 vhd card
 - implements vhd player control (VO-20PS + VO-20PC) and data decoding
-- based on CZ-8RS card (RS-232) and msx vhd board (IF-C9C/D)
+- based on
+  - CZ-8RS card (RS-232)
+  - MSX vhd board (IF-C9C/D)
+  - "How to enjoy VHD" book.
+  - VO-20IP deassembled code
+  - Thunder Storm X1 game deassembled code
+  - Road Blaster X1 game deassembled code
 - CPLD version for logic side to decrease used ICs and pin count.
 - DB15 connector towards VHD player with MSX type DIN13 connector (so not for Sharp vhd players with din-8 connector)
 - needed cable connections:
