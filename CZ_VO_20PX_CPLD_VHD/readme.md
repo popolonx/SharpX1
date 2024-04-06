@@ -2,7 +2,7 @@ Sharp X1 vhd card
 - implements vhd player control (VO-20PS + VO-20PC) and data decoding
 - based on CZ-8RS card (RS-232) and msx vhd board (IF-C9C/D)
 - CPLD version for logic side to decrease used ICs and pin count.
-- DB15 connector towards VHD player (towards victor VHDpc din13, not for Sharp vhd din-8)
+- DB15 connector towards VHD player with MSX type DIN13 connector (so not for Sharp vhd players with din-8 connector)
 - needed cable connections:
   - DIN13-pin3 <-> DB15-pin3
   - DIN13-pin4 <-> DB15-pin4
