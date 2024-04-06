@@ -22,4 +22,4 @@ Sharp X1 vhd card
 
 NOTE! Old kicad 5.1.5 used!
 
-![PCB]( https://github.com/popolonx/SharpX1/blob/b43a84b1a465ee24abbda5f174d18ee1b75c2301/CZ_VO_20PX_CPLD_VHD/CZ_8RS_pcb.png )
+![PCB]( https://github.com/popolonx/SharpX1/blob/dc23b51039528aa566847a4aa391609c88fb9d12/CZ_VO_20PX_CPLD_VHD/CZ_VO_20PX_CLPD_pcb.png )
