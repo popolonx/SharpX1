@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EMP7064_PLCC84
+D ROMless, 1K RAM, 512B EEPROM, PLCC-68
+K HC11 MCU Microcontroller
+F http://cache.freescale.com/files/microcontrollers/doc/data_sheet/MC68HC11F1.pdf
+$ENDCMP
+#
+#End Doc Library
