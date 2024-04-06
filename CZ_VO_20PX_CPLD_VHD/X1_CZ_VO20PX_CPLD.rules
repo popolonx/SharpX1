@@ -1,0 +1,222 @@
+
+(rules PCB X1_CZ_VO20PX_CPLD
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 4631)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 300.0)
+    (clear 150.0 (type smd_to_turn_gap))
+    (clear 400.0 (type default-Power))
+    (clear 75.0 (type smd-smd))
+    (clear 400.0 (type smd-Power))
+    (clear 400.0 (type "kicad_default"-Power))
+    (clear 400.0 (type ARDPower-Power))
+    (clear 200.0 (type PLCCPOWER-PLCCPOWER))
+    (clear 400.0 (type PLCCPOWER-Power))
+    (clear 400.0 (type Power-Power))
+  )
+  (padstack "Via[0-1]_900:600_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1100:700_um"
+    (shape
+      (circle F.Cu 1100.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1100.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:700_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_900:600_um" "Via[0-1]_900:600_um" default
+  )
+  (via 
+    "Via[0-1]_1100:700_um" "Via[0-1]_1100:700_um" default
+  )
+  (via 
+    "Via[0-1]_1200:700_um" "Via[0-1]_1200:700_um" default
+  )
+  (via 
+    "Via[0-1]_2000:1000_um" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
+    "Via[0-1]_900:600_um-kicad_default" "Via[0-1]_900:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1100:700_um-kicad_default" "Via[0-1]_1100:700_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:700_um-kicad_default" "Via[0-1]_1200:700_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-kicad_default" "Via[0-1]_2000:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_900:600_um-ARDPower" "Via[0-1]_900:600_um" ARDPower
+  )
+  (via 
+    "Via[0-1]_1100:700_um-ARDPower" "Via[0-1]_1100:700_um" ARDPower
+  )
+  (via 
+    "Via[0-1]_1200:700_um-ARDPower" "Via[0-1]_1200:700_um" ARDPower
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-ARDPower" "Via[0-1]_2000:1000_um" ARDPower
+  )
+  (via 
+    "Via[0-1]_900:600_um-PLCCPOWER" "Via[0-1]_900:600_um" PLCCPOWER
+  )
+  (via 
+    "Via[0-1]_1100:700_um-PLCCPOWER" "Via[0-1]_1100:700_um" PLCCPOWER
+  )
+  (via 
+    "Via[0-1]_1200:700_um-PLCCPOWER" "Via[0-1]_1200:700_um" PLCCPOWER
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-PLCCPOWER" "Via[0-1]_2000:1000_um" PLCCPOWER
+  )
+  (via 
+    "Via[0-1]_900:600_um-Power" "Via[0-1]_900:600_um" Power
+  )
+  (via 
+    "Via[0-1]_1100:700_um-Power" "Via[0-1]_1100:700_um" Power
+  )
+  (via 
+    "Via[0-1]_1200:700_um-Power" "Via[0-1]_1200:700_um" Power
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-Power" "Via[0-1]_2000:1000_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_900:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_900:600_um-kicad_default"
+  )
+  (via_rule
+    ARDPower "Via[0-1]_1100:700_um-ARDPower"
+  )
+  (via_rule
+    PLCCPOWER "Via[0-1]_1200:700_um-PLCCPOWER"
+  )
+  (via_rule
+    Power "Via[0-1]_2000:1000_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    DB0 DB1 DB2 AB11 AB10 AB9 AB8 AB7
+    AB6 AB5 AB4 AB3 AB2 AB1 AB0 ~EXWAIT
+    ~EXINT RESET ~IEI ~IORQ ~RD ~WE ~M1 CLK
+    DB7 DB6 DB5 DB4 DB3 ~IACK "~IRQ_RX" "IRQ_RX"
+    SIOCLK "Net-(IC4-Pad4)" "Net-(IC4-Pad1)" ~CS RXRDY TXEMPT M1 TxRxCLK
+    ~EXIO "Net-(C201-Pad1)" "Net-(C202-Pad1)" "Net-(C203-Pad1)" "Net-(C204-Pad2)" VHD6 "Net-(C205-Pad1)" "Net-(C206-Pad2)"
+    "Net-(C206-Pad1)" "VHD9_DIODE" VHD10BIT VHD3BIT VHD8BIT VHD12BIT VHD4 "VHD_DATA_BIT0"
+    "VHD_DATA_BIT7" "VHD_DATA_BIT6" "VHD_DATA_ENABLE" "VHD_DATA_BIT5" "VHD_DATA_BIT4" "VHD_DATA_ACK" VHD4BIT "VHD_DATA_REQ"
+    "VHD_DATA_BIT3" TX "VHD_DATA_BIT2" RX "VHD_DATA_BIT1" "ARD_RST" "V_SYNCH" TX2
+    RX2 "ARD_RST2" VHD12 VHD10 VHD9 VHD8 VHD7 VHD3
+    "Net-(Q2-Pad1)" "Net-(C110-Pad1)" "Net-(C111-Pad1)" "Net-(C222-Pad2)" "Net-(C222-Pad1)" "Net-(IC102-Pad11)" "Net-(IC102-Pad10)" "SW_TX"
+    "SW_RX" "BMC_BIT" "VHD9_INV" "Net-(IC2-Pad2)" "Net-(IC2-Pad1)" "M1_FILTERED" "Net-(IC2-Pad28)" "Net-(IC2-Pad27)"
+    "Net-(IC2-Pad24)" "Net-(IC2-Pad23)" "Net-(IC2-Pad22)" "Net-(IC2-Pad8)" "Net-(IC2-Pad7)" "Net-(IC2-Pad6)" "Net-(IC2-Pad19)" "Net-(IC2-Pad5)"
+    "Net-(IC2-Pad17)" "Net-(IC2-Pad3)" "Net-(IC4-Pad13)" "Net-(IC4-Pad5)" "Net-(IC4-Pad11)" "Net-(IC4-Pad10)" "Net-(IC4-Pad3)" "Net-(IC4-Pad9)"
+    "Net-(IC4-Pad8)" "Net-(IC5-Pad9)" "Net-(IC5-Pad8)" "Net-(IC5-Pad7)" "Net-(IC5-Pad6)" "Net-(IC5-Pad5)" "Net-(IC7-Pad1)" "Net-(IC7-Pad2)"
+    "Net-(IC8-Pad9)" "Net-(IC8-Pad16)" "Net-(IC8-Pad7)" "Net-(IC8-Pad5)" "Net-(IC8-Pad3)" ~IEO TCK TDO
+    TDI TMS
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class ARDPower
+    "ARDUINO_POWER"
+    (clearance_class ARDPower)
+    (via_rule ARDPower)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PLCCPOWER
+    "PLCC_GND" "PLCC_VCC"
+    (clearance_class PLCCPOWER)
+    (via_rule PLCCPOWER)
+    (rule
+      (width 600.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND 5V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
