@@ -15,3 +15,5 @@ Sharp X1 vhd card
   - DIN13-shield <-> DB15-shield (is GND)
 
 NOTE! Old kicad 5.1.5 used!
+
+![PCB] (https://github.com/popolonx/SharpX1/blob/b43a84b1a465ee24abbda5f174d18ee1b75c2301/CZ_VO_20PX_CPLD_VHD/CZ_8RS_pcb.png)
