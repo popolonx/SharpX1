@@ -1,0 +1,122 @@
+
+(rules PCB X1_ROMBASIC
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1926)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 300.2)
+    (clear 150.0 (type smd_to_turn_gap))
+    (clear 400.2 (type default_Power))
+    (clear 75.0 (type smd_smd))
+    (clear 400.2 (type smd_Power))
+    (clear 400.2 (type "kicad_default"_Power))
+    (clear 400.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_900:600_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_900:600_um" "Via[0-1]_900:600_um" default
+  )
+  (via 
+    "Via[0-1]_2000:1000_um" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
+    "Via[0-1]_900:600_um-kicad_default" "Via[0-1]_900:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-kicad_default" "Via[0-1]_2000:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_900:600_um-Power" "Via[0-1]_900:600_um" Power
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-Power" "Via[0-1]_2000:1000_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_900:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_900:600_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_2000:1000_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(IC1-Pad6)" "Net-(IC1-Pad12)" "Net-(IC1-Pad11)" "Net-(IC1-Pad8)" "Net-(IC2-Pad8)" IORQ "Net-(IC3-Pad6)" "Net-(IC3-Pad12)"
+    "Net-(IC3-Pad5)" "Net-(IC3-Pad11)" "Net-(IC3-Pad3)" "Net-(IC3-Pad9)" "ROM_D2" "ROM_D1" "ROM_A8" "ROM_D0"
+    "ROM_A9" "ROM_A0" "ROM_A11" "ROM_A1" "ROM_A2" "ROM_A10" "ROM_A3" "ROM_A4"
+    "ROM_D7" "ROM_A5" "ROM_D6" "ROM_A6" "ROM_D5" "ROM_A7" "ROM_D4" "ROM_D3"
+    "BUS_DB0" "BUS_DB1" "BUS_DB2" "BUS_DB3" "BUS_DB4" "BUS_DB5" "BUS_DB6" "BUS_DB7"
+    "BUS_A3" "BUS_A7" "BUS_A6" "BUS_A5" "BUS_A8" "BUS_A4" "BUS_A2" "BUS_A11"
+    "BUS_A9" "BUS_A10" "BUS_EXIO" "BUS_A1" "BUS_A0" RD "Net-(IC3-Pad8)" "Net-(IC6-Pad1)"
+    "ROM_A15" "ROM_A14" "ROM_A13" "ROM_A12"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +5V GND
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
