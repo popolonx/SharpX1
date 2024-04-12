@@ -20,9 +20,9 @@ Sharp X1 vhd card
   - DIN13-pin12 <-> DB15-pin12
   - DIN13-shield <-> DB15-shield (is GND)
 
-IRQ address jumpers needs to be set for AB3+AB4+AB7 as closed, AB5+AB6 is open
-I/O address jumpers needs to be set to all as closed
-Baud rate jumper needs to be set as 9600
+- IRQ address jumpers needs to be set for AB3+AB4+AB7 as closed, AB5+AB6 is open
+- I/O address jumpers needs to be set to all as closed
+- Baud rate jumper needs to be set as 9600
 
 NOTE! Old kicad 5.1.5 used!
 
