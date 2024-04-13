@@ -1513,7 +1513,7 @@ Text GLabel 7470 9790 2    50   Input ~ 0
 Text GLabel 3840 5460 0    50   Input ~ 0
 ~RD
 Text GLabel 3840 5560 0    50   Input ~ 0
-~SIO_SEL
+~SIOSEL
 $Comp
 L power:+5V #PWR0134
 U 1 1 64ACEEFE
@@ -1539,9 +1539,9 @@ $EndComp
 Text GLabel 5240 5460 0    50   Input ~ 0
 ~CS
 Text GLabel 5240 5560 0    50   Input ~ 0
-SIORD
+~SIORD
 Text GLabel 5240 5660 0    50   Input ~ 0
-SIOWR
+~SIOWR
 Text GLabel 5240 5760 0    50   Input ~ 0
 AB0
 Text GLabel 5240 6010 0    50   Input ~ 0
