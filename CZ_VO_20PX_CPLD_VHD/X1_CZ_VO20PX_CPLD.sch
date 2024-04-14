@@ -2188,34 +2188,34 @@ Wire Wire Line
 	9970 13770 9970 13870
 Wire Wire Line
 	9970 14070 9970 13970
-Text GLabel 13690 2490 3    50   Input ~ 0
-SW_RX
 Text GLabel 13980 1840 3    50   Input ~ 0
+SW_RX
+Text GLabel 13690 2490 3    50   Input ~ 0
 SW_TX
-Text GLabel 13690 1990 1    50   Input ~ 0
-RX
 Text GLabel 13980 1340 1    50   Input ~ 0
+RX
+Text GLabel 13690 1990 1    50   Input ~ 0
 TX
 $Comp
 L Jumper:Jumper_3_Open JP2
 U 1 1 6617A6BC
-P 13690 2240
-F 0 "JP2" V 13644 2327 50  0000 L CNN
-F 1 "Jumper_3_Open" V 13735 2327 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13690 2240 50  0001 C CNN
-F 3 "~" H 13690 2240 50  0001 C CNN
-	1    13690 2240
+P 13980 1590
+F 0 "JP2" V 13934 1677 50  0000 L CNN
+F 1 "Jumper_3_Open" V 14025 1677 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13980 1590 50  0001 C CNN
+F 3 "~" H 13980 1590 50  0001 C CNN
+	1    13980 1590
 	0    1    1    0   
 $EndComp
 $Comp
 L Jumper:Jumper_3_Open JP3
 U 1 1 6617A6BD
-P 13980 1590
-F 0 "JP3" V 13934 1677 50  0000 L CNN
-F 1 "Jumper_3_Open" V 14025 1677 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13980 1590 50  0001 C CNN
-F 3 "~" H 13980 1590 50  0001 C CNN
-	1    13980 1590
+P 13690 2240
+F 0 "JP3" V 13644 2327 50  0000 L CNN
+F 1 "Jumper_3_Open" V 13735 2327 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13690 2240 50  0001 C CNN
+F 3 "~" H 13690 2240 50  0001 C CNN
+	1    13690 2240
 	0    1    1    0   
 $EndComp
 Wire Wire Line
