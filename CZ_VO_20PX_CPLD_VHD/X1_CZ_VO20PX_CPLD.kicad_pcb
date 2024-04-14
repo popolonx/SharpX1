@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 72)
+    (drawings 73)
     (tracks 2256)
     (zones 0)
     (modules 112)
@@ -6331,6 +6331,9 @@
     )
   )
 
+  (gr_text ATF1504AS (at 218.5416 161.0868) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text 10K (at 256.4003 126.5174 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
