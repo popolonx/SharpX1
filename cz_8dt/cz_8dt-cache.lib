@@ -1038,6 +1038,55 @@ X ~ 2 100 0 40 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# agg-kicad_CP
+#
+DEF agg-kicad_CP C 0 40 N N 1 F N
+F0 "C" 50 70 50 H V C CNN
+F1 "agg-kicad_CP" 50 -70 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 40 30 40 -30 N
+P 2 0 1 0 60 30 60 -30 N
+P 2 0 1 0 80 25 100 25 N
+P 2 0 1 0 90 35 90 15 N
+P 4 0 1 0 60 30 70 30 70 -30 60 -30 N
+X ~ 1 0 0 40 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# agg-kicad_D
+#
+DEF agg-kicad_D D 0 40 N N 1 F N
+F0 "D" 50 70 50 H V C CNN
+F1 "agg-kicad_D" 50 -70 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 30 30 30 -30 N
+P 4 0 1 0 70 30 30 0 70 -30 70 30 F
+X ~ 1 0 0 30 R 50 50 1 1 P
+X ~ 2 100 0 30 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# agg-kicad_L
+#
+DEF agg-kicad_L L 0 40 N N 1 F N
+F0 "L" 50 50 50 H V C CNN
+F1 "agg-kicad_L" 50 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 30 0 10 1 1799 0 1 0 N 40 0 20 0
+A 50 0 10 1 1799 0 1 0 N 60 0 40 0
+A 70 0 10 1 1799 0 1 0 N 80 0 60 0
+X ~ 1 0 0 20 R 50 50 1 1 P
+X ~ 2 100 0 20 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # agg-kicad_R
 #
 DEF agg-kicad_R R 0 40 N N 1 F N
