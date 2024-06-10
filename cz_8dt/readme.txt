@@ -2,6 +2,7 @@ sharp CZ-8DT schematics to be drawn with kicad
 -work in progress...
 -main pcb almoust done
 -Resistor, capacitor, and transistor values missing still.
+-wrong IC101 type (4044 vs MC4044P) in schematics
 
 IC LIST:
 IC101: MC4044P (not same as some general 4044 )
