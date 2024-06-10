@@ -4,7 +4,7 @@ sharp CZ-8DT schematics to be drawn with kicad
 -Resistor, capacitor, and transistor values missing still.
 
 IC LIST:
-IC101: 4044
+IC101: MC4044P (not same as some general 4044 )
 IC102: 4053
 IC104: 4069
 IC105: HA11720
