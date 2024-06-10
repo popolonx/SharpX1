@@ -1,6 +1,7 @@
 sharp CZ-8DT schematics to be drawn with kicad
 -work in progress...
-
+-main pcb almoust done
+-Resistor, capacitor, and transistor values missing still.
 
 IC LIST:
 IC101: 4044
@@ -11,7 +12,7 @@ IC106,IC602,IC604: 74LS221
 IC201: 7407P
 IC203,IC1203: 74LS74
 IC301,IC302,IC305,IC401,IC402: TA7348P
-IC303,IC304,IC403: TA7347P
+IC303,IC403: TA7347P
 IC404: BA7001
 IC601: X0065CE
 IC801: X0093CE (TA7608P)
