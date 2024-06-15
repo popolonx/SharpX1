@@ -1,3 +1,5 @@
+On main board (K2686CE)
+-----------------------
 C102 103
 C103 271
 C104 681
@@ -29,6 +31,9 @@ C319 104
 C333 101
 C334 103
 C336 103
+C343 10uf/16v
+C344 10uf/16v
+C345 10uf/16v
 C408 103
 C411 103
 C414 104
@@ -71,3 +76,9 @@ C1005 103
 C1101 56p
 C1102 103
 C1103 101
+Electrolytic capacitor are on schematics already
+
+on audio board (F2868CE)
+------------------------
+Cxxx  100uf/35v 
+All other electrolytic capacitor are on schematics already

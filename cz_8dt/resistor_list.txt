@@ -1,3 +1,5 @@
+Main board:
+-----------
 JUMPER-68 22R
 R101 68K
 R102 1.2K
@@ -335,3 +337,20 @@ Rxxx  560R tv control pin 8 to ground
 Rxxx  4K7 near Q111
 Rxxx  18K near R110/R112
 Rxxx  470R near Q1107/R807
+
+F2868CE board
+--------------
+R358 10K
+R359 3.3K
+R360 27K
+R361 3.3K
+R362 1K
+R363 3.3K
+R364 1K
+R365 3.3K
+R366 1K
+R940 27R
+R941 68R
+R942 220R
+D304=resistor=4.7R
+Rxxx   82R
