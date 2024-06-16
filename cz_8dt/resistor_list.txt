@@ -354,3 +354,11 @@ R941 68R
 R942 220R
 D304=resistor=4.7R
 Rxxx   82R
+
+Power supply
+------------
+R701 =wire
+R702 0.56R
+R703 18R
+Rxxx 0.5R (under the pcb)
+Rxxx 33R 5W (separate from pcb)
