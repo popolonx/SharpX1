@@ -11733,7 +11733,7 @@ Connection ~ 8070 15700
 Wire Wire Line
 	8070 15700 8070 15750
 Text GLabel 8320 15700 2    50   Input ~ 0
-N4
+N2
 Wire Wire Line
 	8070 15700 8220 15700
 Wire Wire Line
@@ -18031,4 +18031,32 @@ Wire Notes Line
 	9760 26030 9760 23660
 Text Notes 9850 24100 0    79   ~ 16
 backpanel\nadjustments\n\n
+Text Notes 11360 27950 0    50   ~ 0
+N1\n1\n2\nN2\n1\n2\n3\n4\n5\nN3\n1\n2\nN4\n1\n2\n3\n4\n5
+Text Notes 2940 17570 0    50   ~ 0
+RGB\nav control input
+Text Notes 32210 8300 0    50   ~ 0
+RGB21\nBLUE
+Text Notes 32180 9350 0    50   ~ 0
+RGB21\nRED
+Text Notes 32170 10360 0    50   ~ 0
+RGB21\nGREEN
+Text Notes 8520 15820 0    50   ~ 0
+RGB21\nR AUDIO OUT
+Text Notes 8510 17130 0    50   ~ 0
+RGB21\nL AUDIO OUT
+Text Notes -40  16720 0    50   ~ 0
+RGB21\nCSynch/CompVideo IN
+Text Notes 700  17110 0    50   ~ 0
+RCA
+Text Notes 690  16010 0    50   ~ 0
+RCA
+Text Notes 680  14890 0    50   ~ 0
+RCA
+Text Notes 3420 19810 0    50   ~ 0
+RGB21\nL AUDIO IN
+Text Notes 240  19200 0    50   ~ 0
+RGB21\nL AUDIO IN
+Text Notes -1070 19830 0    50   ~ 0
+Not a typo!\nRCA input 3 and RGB21 audio input channels are\nswapped connected, so this is clearly a design bug!
 $EndSCHEMATC
