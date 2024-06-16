@@ -9272,7 +9272,7 @@ Text GLabel 11380 12330 0    50   Input ~ 0
 Wire Wire Line
 	13050 12330 13300 12330
 Wire Wire Line
-	13300 12330 13300 14010
+	13300 12330 13300 13850
 Wire Wire Line
 	12040 14010 13300 14010
 Wire Wire Line
@@ -10896,8 +10896,6 @@ Wire Wire Line
 	11650 10130 11650 10180
 Wire Wire Line
 	11650 10180 11600 10180
-Text Notes 13290 14000 0    79   ~ 16
----> IC901 pin13  ????
 Text GLabel 10900 9830 2    50   Input ~ 0
 J18
 Text GLabel 11270 9830 0    50   Input ~ 0
@@ -14005,8 +14003,6 @@ Wire Wire Line
 	8060 9820 8060 9580
 Wire Wire Line
 	8060 9820 8160 9820
-Text GLabel 3310 1170 2    50   Input ~ 0
-H1
 Text GLabel 3310 1270 2    50   Input ~ 0
 H2
 Text GLabel 3310 1370 2    50   Input ~ 0
@@ -14716,7 +14712,7 @@ Wire Wire Line
 Connection ~ 1710 930 
 Wire Wire Line
 	1710 930  1820 930 
-Text GLabel 13310 14050 2    50   Input ~ 0
+Text GLabel 13450 13850 2    50   Input ~ 0
 IC901_~S11
 Text Notes 4210 12130 0    50   ~ 0
 Check D934 connections
@@ -18059,4 +18055,88 @@ Text Notes 240  19200 0    50   ~ 0
 RGB21\nL AUDIO IN
 Text Notes -1070 19830 0    50   ~ 0
 Not a typo!\nRCA input 3 and RGB21 audio input channels are\nswapped connected, so this is clearly a design bug!
+$Comp
+L agg-kicad:CONN_01x12 H_
+U 1 1 EFB01F8B
+P 5230 890
+F 0 "H_" H 5263 1105 50  0000 C CNN
+F 1 "CONN_01x12" H 5263 1014 50  0000 C CNN
+F 2 "" H 5230 890 50  0001 C CNN
+F 3 "" H 5230 890 50  0001 C CNN
+	1    5230 890 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5330 990  2    50   Input ~ 0
+H2
+Text GLabel 5330 1090 2    50   Input ~ 0
+H3
+Text GLabel 5330 1190 2    50   Input ~ 0
+H4
+Text GLabel 5330 1290 2    50   Input ~ 0
+H5
+Text GLabel 5330 1390 2    50   Input ~ 0
+H6
+Text GLabel 5330 1490 2    50   Input ~ 0
+H7
+Text GLabel 5330 1590 2    50   Input ~ 0
+H8
+Text GLabel 5330 1690 2    50   Input ~ 0
+H9
+Text GLabel 5330 1790 2    50   Input ~ 0
+H10
+Text GLabel 5330 1890 2    50   Input ~ 0
+H11
+Text GLabel 5330 1990 2    50   Input ~ 0
+H12
+Wire Wire Line
+	5330 890  5670 890 
+NoConn ~ 5670 890 
+Text Notes 5730 920  0    50   ~ 0
+no wire
+Text Notes 5530 2040 0    63   ~ 0
+Rec-out\nMon-3\nMon-2\nMon-1\nVin-3\nVin-2\nVin-1\nVideo\nSuperImpose\nComputer\nTeloper
+Text Notes 5480 740  0    98   ~ 20
+Buttons
+Text GLabel 1350 2220 0    50   Input ~ 0
+DSUB_PIN6
+Text GLabel 1350 2360 0    50   Input ~ 0
+DSUB_PIN7
+Text GLabel 1350 2480 0    50   Input ~ 0
+DSUB_PIN8
+Text GLabel 1350 2600 0    50   Input ~ 0
+DSUB_PIN9
+$Comp
+L power:GND #PWR?
+U 1 1 F7306C72
+P 1610 2510
+F 0 "#PWR?" H 1610 2260 50  0001 C CNN
+F 1 "GND" H 1615 2337 50  0000 C CNN
+F 2 "" H 1610 2510 50  0001 C CNN
+F 3 "" H 1610 2510 50  0001 C CNN
+	1    1610 2510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1610 2480 1350 2480
+Wire Wire Line
+	1610 2480 1610 2510
+NoConn ~ 1420 2600
+NoConn ~ 1420 2360
+Wire Wire Line
+	1350 2360 1420 2360
+Wire Wire Line
+	1350 2600 1420 2600
+NoConn ~ 1430 2220
+Wire Wire Line
+	1350 2220 1430 2220
+NoConn ~ 3310 1170
+Wire Wire Line
+	13450 13850 13300 13850
+Connection ~ 13300 13850
+Wire Wire Line
+	13300 13850 13300 14010
+Text Notes 3820 1930 0    50   ~ 0
+External control pins:\n4-3-2-1\n0000 -\n0001 rec-out\n0010 mon-3\n0011 mon-2\n0100 mon-1\n0101 Vin-3\n0110 Vin-2\n0111 Vin-1\n1000 Video\n1001 SuperImpose\n1010 Computer\n1011 Reset Teloper\n1100 Set Teloper
+Text Notes 3800 700  0    50   ~ 0
+When pin 5 put to ground
 $EndSCHEMATC
