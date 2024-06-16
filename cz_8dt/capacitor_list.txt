@@ -82,3 +82,19 @@ on audio board (F2868CE)
 ------------------------
 Cxxx  100uf/35v 
 All other electrolytic capacitor are on schematics already
+
+power supply:
+-------------
+C701 104
+C702 103
+C703 103
+C704 103
+C705 2200uf/35v
+C706 47uf/25v
+C707 100uf/16v
+C708 103
+C709 2200uf/25v
+C710 47uf/16v
+C712 103
+
+C708 103
