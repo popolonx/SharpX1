@@ -12150,10 +12150,10 @@ Wire Notes Line
 	1390 21270 1390 21680
 Wire Notes Line
 	1390 21680 2360 21680
-Text Notes 1340 21110 0    50   ~ 0
+Text Notes 1370 20880 0    50   ~ 0
 switch to select audio mixing
-Text Notes 1020 21220 0    50   ~ 0
-EXT-S/COMPUTER - VIDEO/COMPUTER - EXT-S/VIDEO
+Text Notes 1110 21150 0    50   ~ 0
+EXT-S/COMPUTER: connects pins 1<->3 9<->11 5<->7 13 <->15\nVIDEO/COMPUTER: connects pins 2<->3, 10<->11, 6<->7, 14 <->15\nEXT-S/VIDEO: connects pins 3<->4,  11<->12, 7<->8, 15 <->16
 $Comp
 L agg-kicad:R R351
 U 1 1 BF84AE40
@@ -15411,7 +15411,7 @@ Wire Wire Line
 Wire Wire Line
 	2840 22170 2840 22240
 Text Notes 3370 22180 0    50   ~ 0
-TV control Input and output
+TV control Input and output\nSound-pin
 $Comp
 L power:GND #PWR0266
 U 1 1 93B01D5C
@@ -17840,7 +17840,7 @@ RCA
 Text Notes 3420 19810 0    50   ~ 0
 RGB21\nL AUDIO IN
 Text Notes 560  19200 0    50   ~ 0
-RGB21\nL AUDIO IN
+RGB21\nR AUDIO IN
 Text Notes 510  20700 0    50   ~ 0
 Not a typo!\nRCA input 3 and RGB21 audio\ninput channels are\nswapped connected,\nso this is clearly a design bug!
 $Comp
@@ -18538,8 +18538,8 @@ Wire Wire Line
 	11290 2520 11290 2630
 Text Notes 10800 1890 0    50   ~ 0
 GND
-Text Notes 11310 1770 0    50   ~ 0
-from solder side
+Text Notes 11250 1850 0    50   ~ 10
+audio balance slider\nfrom solder side
 Wire Notes Line
 	16910 16320 15410 16320
 Text Notes 15440 15900 0    79   ~ 16
